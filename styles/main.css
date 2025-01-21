@@ -217,9 +217,10 @@ input[type="checkbox"]:checked + .checkbox-label::before {
     grid-template-columns: repeat(2, 1fr);
     gap: 4px;
     padding: 2px;
-    transform: scale(1.2);
+    transform: scale(1.3);
+    transform: rotate(180deg);
     margin-top: 8px;
-    transition: transform 0.8s ease;
+    transition: transform 1.2s ease;
 }
 
 .dot {
