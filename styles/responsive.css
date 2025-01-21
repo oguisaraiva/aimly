@@ -1,0 +1,40 @@
+/* Responsividade para telas pequenas (mobile) */
+@media screen and (max-width: 420px) {
+    body {
+        padding: 1rem;
+    }
+
+    .task-board {
+        padding: 1rem;
+    }
+
+    .task-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+/* Responsividade para dispositivos touch */
+@media (hover: none) {
+    .task-item,
+    .add-task-btn,
+    .language-toggle {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .checkbox-label{
+        min-height: 2rem;
+        min-width: 2rem;
+    }
+
+    .date-btn,
+    .delete-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}

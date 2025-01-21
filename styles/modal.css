@@ -1,0 +1,115 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 300px;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.modal h3 {
+    margin: 0 0 1.5rem 0;
+    color: #ffffff;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.date-input {
+    width: calc(100% - 1.6rem);
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.modal-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.confirm-btn {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.confirm-btn:hover {
+    background-color: #333;
+}
+
+.modal-btn.cancel-btn {
+    background-color: rgba(119, 56, 56, 0.2);
+    color: #e2c5c5;
+    border: 1px solid rgba(197, 119, 119, 0.3);
+    transition: all 0.3s ease;
+}
+
+.modal-btn.cancel-btn:hover {
+    background-color: rgba(202, 85, 85, 0.2);
+}
+
+input[type="date"] {
+    background-color: #222;
+    color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
