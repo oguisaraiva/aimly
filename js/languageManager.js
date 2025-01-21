@@ -20,48 +20,18 @@ const translations = {
 
 const quotes = {
     pt: [
-        {
-            text: "A disciplina é a ponte entre metas e realizações.",
-            author: "Jim Rohn"
-        },
-        {
-            text: "Não é o tempo que passa, é você que passa por ele.",
-            author: "Aristóteles"
-        },
-        {
-            text: "O segredo para seguir em frente é começar.",
-            author: "Mark Twain"
-        },
+
         {
             text: "A persistência é o caminho do êxito.",
             author: "Charles Chaplin"
         },
-        {
-            text: "Conhecimento não é aquilo que você sabe, mas o que você faz com aquilo que sabe.",
-            author: "Aldous Huxley"
-        }
     ],
     en: [
-        {
-            text: "Discipline is the bridge between goals and accomplishment.",
-            author: "Jim Rohn"
-        },
-        {
-            text: "Time doesn't pass, you pass through it.",
-            author: "Aristotle"
-        },
+
         {
             text: "The secret of getting ahead is getting started.",
             author: "Mark Twain"
         },
-        {
-            text: "Persistence is the path to success.",
-            author: "Charles Chaplin"
-        },
-        {
-            text: "Knowledge is not what you know, but what you do with what you know.",
-            author: "Aldous Huxley"
-        }
     ]
 };
 
