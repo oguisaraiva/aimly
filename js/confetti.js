@@ -25,7 +25,7 @@ function createConfetti(container) {
         confetti.style.animationDuration = `${0.8 + Math.random() * 0.4}s`;
 
         // Rotação aleatória para cada peça
-        confetti.style.setProperty('--rotation', `${Math.random() * 720 - 360}deg`);
+        confetti.style.setProperty('--rotation', `${Math.random() * 720 - 180}deg`);
 
         container.appendChild(confetti);
     }
