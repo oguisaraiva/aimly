@@ -92,7 +92,7 @@
 .language-toggle:hover {
     background: var(--toggle-hover);
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease;
 }
 
 .language-toggle .flag {
