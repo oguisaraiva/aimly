@@ -1,10 +1,10 @@
 :root {
     --toggle-bg: rgba(255, 255, 255, 0.1);
-    --toggle-hover: rgba(136, 68, 182, 0.3);
+    --toggle-hover: rgba(123, 91, 136, 0.3);
 }
 
 body {
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0;
     padding: 1rem; /* Padding menor para mobile */
     display: flex;
@@ -13,4 +13,5 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Work Sans', sans-serif;
+    overflow: auto;
 }

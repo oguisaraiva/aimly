@@ -79,7 +79,7 @@
 .language-toggle {
     background: var(--toggle-bg);
     border: none;
-    padding: 8px;
+    padding: 4px;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.2s ease;
@@ -96,11 +96,27 @@
 }
 
 .language-toggle .flag {
-    width: 20px;
-    height: 15px;
+    width: 26px;
+    height: 16px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    display: none;
 }
 
-.language-toggle[data-lang="pt"] .flag-br,
-.language-toggle[data-lang="en"] .flag-us {
+/* quick fix for es flag, find
+a better implementation later */
+
+.language-toggle .flag-es{
+    width: 16px;
+    height: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 5px;
     display: none;
+}
+
+.language-toggle[data-lang="pt"] .flag-us,
+.language-toggle[data-lang="en"] .flag-es,
+.language-toggle[data-lang="es"] .flag-br {
+    display: block;
 }
