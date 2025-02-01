@@ -43,7 +43,13 @@ class PomodoroTimer {
 
     startTimer() {
         this.isRunning = true;
-        this.startBtn.textContent = 'pause';
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        const translations = {
+            pt: { start: 'iniciar', pause: 'pausar' },
+            en: { start: 'start', pause: 'pause' },
+            es: { start: 'iniciar', pause: 'pausar' }
+        };
+        this.startBtn.textContent = translations[currentLang].pause;
 
         this.timerInterval = setInterval(() => {
             this.timeLeft--;
@@ -57,7 +63,13 @@ class PomodoroTimer {
 
     pauseTimer() {
         this.isRunning = false;
-        this.startBtn.textContent = 'start';
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        const translations = {
+            pt: { start: 'iniciar', pause: 'pausar' },
+            en: { start: 'start', pause: 'pause' },
+            es: { start: 'iniciar', pause: 'pausar' }
+        };
+        this.startBtn.textContent = translations[currentLang].start;
         clearInterval(this.timerInterval);
     }
 
@@ -83,7 +95,6 @@ class PomodoroTimer {
 
         this.mode = modes[button.className.split(' ')[1]];
         this.timeLeft = this.times[this.mode];
-        this.modeDisplay.textContent = this.mode.replace(/([A-Z])/g, ' $1').toLowerCase();
 
         this.modeButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');

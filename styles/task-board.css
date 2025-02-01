@@ -31,7 +31,7 @@
 
 .task-input:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
 }
 
 .add-task-btn {
@@ -48,7 +48,7 @@
 }
 
 .add-task-btn:hover {
-    background-color: #333333;
+    background-color: #363636;
 }
 
 .task-list {

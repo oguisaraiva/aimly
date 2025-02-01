@@ -27,6 +27,10 @@
         {
             "text": "quanto mais você sua no treino, menos sangra no combate.",
             "author": "sun tzu"
+        },
+        {
+            "text": "o sucesso vem daquilo que você faz repetidamente.",
+            "author": "aristóteles"
         }
     ],
     "en": [
@@ -57,6 +61,44 @@
         {
             "text": "the more you sweat in training, the less you bleed in battle.",
             "author": "sun tzu"
+        },
+        {
+            "text": "success is the sum of what you do repeatedly.",
+            "author": "aristotle"
+        }
+    ],
+    "es": [
+        {
+            "text": "la disciplina es el puente entre las metas y el logro.",
+            "author": "jim rohn"
+        },
+        {
+            "text": "el tiempo no pasa, tú pasas a través de él.",
+            "author": "aristotle"
+        },
+        {
+            "text": "el secreto para avanzar es comenzar.",
+            "author": "mark twain"
+        },
+        {
+            "text": "la persistencia es el camino hacia el éxito.",
+            "author": "charles chaplin"
+        },
+        {
+            "text": "el conocimiento no es lo que sabes, sino lo que haces con lo que sabes.",
+            "author": "aldous huxley"
+        },
+        {
+            "text": "el éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+            "author": "robert collier"
+        },
+        {
+            "text": "cuanto más sudas en el entrenamiento, menos sangras en la batalla.",
+            "author": "sun tzu"
+        },
+        {
+            "text": "el éxito es la suma de lo que haces repetidamente.",
+            "author": "aristóteles"
         }
     ]
 }
