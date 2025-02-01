@@ -43,7 +43,7 @@ class PomodoroTimer {
 
     startTimer() {
         this.isRunning = true;
-        this.startBtn.textContent = 'Pause';
+        this.startBtn.textContent = 'pause';
 
         this.timerInterval = setInterval(() => {
             this.timeLeft--;
@@ -57,7 +57,7 @@ class PomodoroTimer {
 
     pauseTimer() {
         this.isRunning = false;
-        this.startBtn.textContent = 'Start';
+        this.startBtn.textContent = 'start';
         clearInterval(this.timerInterval);
     }
 

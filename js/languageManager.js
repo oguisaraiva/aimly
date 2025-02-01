@@ -3,18 +3,18 @@ const DEFAULT_LANG = 'pt';
 
 const translations = {
     pt: {
-        placeholder: 'Meu objetivo hoje é...',
-        addButton: 'Adicionar',
-        selectDate: 'Selecionar Data',
-        confirm: 'Confirmar',
-        cancel: 'Cancelar',
+        placeholder: 'meu objetivo hoje é...',
+        addButton: 'adicionar',
+        selectDate: 'selecionar Data',
+        confirm: 'confirmar',
+        cancel: 'cancelar',
     },
     en: {
-        placeholder: 'My goal today is...',
-        addButton: 'Add',
-        selectDate: 'Select Date',
-        confirm: 'Confirm',
-        cancel: 'Cancel'
+        placeholder: 'my goal today is...',
+        addButton: 'add',
+        selectDate: 'select date',
+        confirm: 'confirm',
+        cancel: 'cancel'
     }
 };
 
@@ -22,15 +22,15 @@ const quotes = {
     pt: [
 
         {
-            text: "A persistência é o caminho do êxito.",
-            author: "Charles Chaplin"
+            text: "a persistência é o caminho do êxito.",
+            author: "charles chaplin"
         },
     ],
     en: [
 
         {
-            text: "The secret of getting ahead is getting started.",
-            author: "Mark Twain"
+            text: "the secret of getting ahead is getting started.",
+            author: "mark twain"
         },
     ]
 };
@@ -55,7 +55,7 @@ class LanguageManager {
         } catch (error) {
             console.error('Error loading quotes:', error);
             // Fallback para quotes padrão em caso de erro
-            this.quotes = quotes; // Mantenha alguns quotes padrão no código
+            this.quotes = quotes;
         }
     }
 
